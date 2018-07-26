@@ -1,4 +1,6 @@
 @import 'settings';
+@import 'menu';
+@import 'mobile';
 
 *{
     box-sizing: border-box;
@@ -42,7 +44,7 @@ header{
 }
 
 .text-secondary{
-    color: $sec-color;
+    color: $secondary-color;
 }
 
 main{
@@ -55,8 +57,8 @@ main{
         a{
             padding: 0.4rem;
             &:hover{
-                color: $sec-color;
-                @include eOut();
+                color: $secondary-color;
+                @include easeOut();
             }
         }
     }
